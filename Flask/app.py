@@ -9,10 +9,10 @@ from flask import Flask, request, jsonify, render_template
 app = Flask(__name__)
 
 # Load model and encoder
-with open(r"C:\Users\naman\AI Project\AI Project\Flask\model.pkl", 'rb') as file:
+with open(r"/Users/sarve/Desktop/SmartInternz-TrafficTelligence/Flask/model.pkl", 'rb') as file:
     model = pickle.load(file)
 
-with open(r"C:\Users\naman\AI Project\AI Project\Flask\encoder.pkl", 'rb') as file:
+with open(r"/Users/sarve/Desktop/SmartInternz-TrafficTelligence/Flask/encoder.pkl", 'rb') as file:
     scale = pickle.load(file)
 print("Model's feature names:", model.feature_names_in_)
 
